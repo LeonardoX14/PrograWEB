@@ -1,0 +1,35 @@
+header{
+    width: auto;
+    background-color: aquamarine ;
+     /*height: 75px; */
+     position: absolute;
+  }
+  h1{
+    display: inline-block;
+    color: blueviolet;
+     border: 10px solid 1px; 
+     background-color: rgb(255, 153, 0);
+  } 
+  #logo{
+    display: inline-block;
+  }
+
+/* PARA UTILIZAR UN ID ES #
+Y SI ES UNA CLASE ES CON . */
+/* #logo{
+ height: 75px;
+} */
+#logo img{
+    width: auto;
+    height: 75px;
+
+}
+#main{
+height: 200px;
+background-color: gray;
+
+}
+#footer{
+height: 175px;
+background-color: blue;
+}

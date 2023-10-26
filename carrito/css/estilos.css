@@ -1,0 +1,378 @@
+header {
+  width: auto;
+  background-color: aquamarine;
+  /* height: 75px; */
+
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  color: blueviolet;
+  border: #333 solid 1px;
+  background-color: #e0840bab;
+}
+
+#logo {
+  position: relative;
+  display: inline-block;
+}
+
+/* PARA UTILIZAR UN ID ES #
+Y SI ES UNA CLASE CON . */
+/* #logo{
+    height: 75px;
+} */
+#logo img {
+  width: auto;
+  height: 75px;
+}
+
+.btos_header {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #333;
+  margin: 1rem;
+
+}
+
+#btn1 {
+
+  background-color: none;
+  color: #333;
+}
+
+#avisos {
+  position: absolute;
+  display: none;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009d;
+  
+
+}
+
+#closeBto {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+#searchDIV {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+
+}
+/**************LOGINFORM**************/
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  0% {transform: scale(0);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  0% {transform: scale(0);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+/************************************/
+
+/********SLIDER*********/
+.carousel-caption {
+  color: black;
+  bottom: 0;
+  top: 1rem;
+  height: 20%;
+}
+
+
+/******** MAIN *********/
+main {
+
+  background: gray url("../img/fodno.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/******** CATEGORIAS ******/
+.h3_cat {
+  padding: .5rem 0;
+  margin: 2rem 0;
+  background-color: #22be49ea;
+  box-shadow: #333 .2rem 1rem 5rem;
+}
+
+#categorias {
+  flex-flow: row nowrap;
+
+}
+
+.card {
+
+  width: 25%;
+}
+
+/*************PRODUCTOS ESTRELLA**************/
+.starProd {
+
+  border-top: #333 dotted 2px;
+  margin: 1rem 0;
+  padding-top: 1.5rem;
+}
+
+.imgFrame {
+
+  width: 200px;
+  height: 200px;
+  border: rgb(42, 5, 250) solid 5px;
+  border-radius: 250px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imgStarProd {
+  width: 100%;
+  height: 100%;
+  border: rgb(5, 174, 252) solid 2px;
+  border-radius: 250px;
+}
+
+#imgSP1 {
+  background: #ffff url("../img/ImgEstrella/MinicomponenteSony.jpg") no-repeat center center;
+  background-size: 90%;
+}
+
+#imgSP2 {
+  background: #ffff url("../img/ImgEstrella/JBLpartybox110.jpg") no-repeat center center;
+  background-size: 90%;
+}
+
+#imgSP3 {
+  background: #ffff url("../img/ImgEstrella/MinicomponenteLG.webp") no-repeat center center;
+  background-size: 90%;
+}
+
+#imgSP4 {
+  background: #ffff url("../img/ImgEstrella/BocinasLogitech.jpg") no-repeat center center;
+  background-size: 90%;
+}
+
+#imgSP5 {
+  background: #ffff url("../img/ImgEstrella/BocinaBOSE.jpg") no-repeat center center;
+  background-size: 90%;
+}
+
+.prodDetails {
+
+  width: 100%;
+}
+
+.prodDetails h3 {
+  color: white;
+  background-color: rgb(5, 174, 252, .7);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  width: 100%;
+  justify-content: center;
+
+  text-shadow: #333 .2rem .2rem .3rem;
+  text-shadow: #0000 -1.5px -1.5px 0,
+    #0000 1.5px 1.5px 0,
+    #0000 -1.5px 1.5px 0,
+    #0000 1.5px -1.5px 0;
+}
+
+.prodDetails p {
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+
+.prodDetails button {
+  width: 100%;
+  font-size: 1.5rem;
+
+}
+
+/********FOOTER**********/
+footer {
+  height: 175px;
+  background-color: blue;
+}
+
+/***********ResponsiveDesign***********/
+@media screen and (max-width: 1023px) {
+  .categorias {
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btos_header {
+    margin: .1rem;
+
+  }
+
+  .card {
+    width: 43%;
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  header h2 {
+    display: none;
+  }
+
+  #logo img {
+    height: 50px;
+  }
+
+  .btos_header {
+    font-weight: bolder;
+
+  }
+
+  #categorias {
+    flex-flow: row wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card a {
+    display: none;
+  }
+
+}

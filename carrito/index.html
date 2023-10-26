@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi tiendita</title>
+  <meta name="description" content="La descripcion de nuestra pagina">
+  <meta name="description" content="Leonardo Xavier Jacquez Ortiz">
+  <!-- <script>
+        alert("Hola Mundo")
+    </script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="avisos">
+    <!-- DIVSEARCH   -->
+    <div id="searchDIV" class="container  w-25">
+      <span id="closeBto">&times;</span>
+      <form class="form-control" name="search" action="#" method="get">
+        <input type="text" name="searchInput" placeholder="Que buscas?">
+        <button id="btoSearch" class="btos_header"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+    <!--**********************************-->
+  </section>
+  <!--************************LOGINFORM*************************-->
+  <div id="loginForm" class="modal">
+  <span class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="" method="post">
+      <div class="imgcontainer">
+        <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Usuario</b></label>
+        <input type="text" placeholder="Ingresa tú nombre de usuario..." name="uname" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingresa tú contraseña..." name="psw" required>
+  
+        <button type="submit">Iniciar sesión</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Recordarme
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancelar</button>
+        <span class="psw">¿Olvidaste tú <a href="#">contraseña?</a></span>
+      </div>
+    </form>
+  </div>
+<!--***************************************************************-->
+  
+  <header class="d-flex  justify-content-between align-items-center">
+    <div><i class="btos_header bi bi-list"></i></div>
+    <div class="d-flex">
+      <div id="logo"><img src="img/logotipo.png"></div>
+      <h2>BolioStore</h2>
+    </div>
+    <nav>
+      <button id="bto1" class="btos_header"><i class="bi bi-search"></i></button>
+      <button id="bto2" class="btos_header"><i class="bi bi-person-circle"></i></button>
+      <button id="bto3" class="btos_header"><i class="bi bi-cart3"></i></button>
+
+    </nav>
+    
+  </header>
+ 
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider/slider1.jpg" class="d-block w-100" alt="Bocinas para escritorio">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bocina para escritorio</h5>
+            <p>Escucha tú música con las bocinas logi.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/slider2.webp" class="d-block w-100" alt="Bocinas PSB">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Par bocinas para escritorio PSB</h5>
+            <p>Par de bocinas PSB a un precio que no te puedes imaginar</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/slider3.webp" class="d-block w-100" alt="Bocinas SADA">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Triple Bocinas SADA</h5>
+            <p>Un sonido elegante con unos buenos graves</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/slider4.webp" class="d-block w-100" alt="Bocinas LOGITECH">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bocinas para escritorio Logitech z250</h5>
+            <p>Estas pequeñas logitech haran que escuches tú música a otro nivel.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/slider5.webp" class="d-block w-100" alt="Bocinas LOGITECH">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bocinas LOGITECH z180</h5>
+            <p>Si buscas bocinas con calidad y precio, estas son las apropiadas</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ************LOS MAS VENDIDOS**************-->
+    <h3 class="h3_cat">Los mas vendidos....</h3>
+    <section id="categorias" class="d-flex ">
+
+      <div class="card m-2 ">
+        <img src="img/categorias/cat1.jpg" class="card-img-top" alt="Bocinas Para Carro">
+        <div class="card-body">
+          <h5 class="card-title">Bocinas para Auto</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2 ">
+        <img src="img/categorias/cat2.jpg" class="card-img-top" alt="Minicomponentes para casa">
+        <div class="card-body">
+          <h5 class="card-title">Mincomponentes para casa</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="img/categorias/cat3.jpg" class="card-img-top" alt="Baffles activos y pasivos">
+        <div class="card-body">
+          <h5 class="card-title">Baffles activos y pasivos</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="img/categorias/cat4.webp" class="card-img-top" alt="Bocinas Para Carro">
+        <div class="card-body">
+          <h5 class="card-title">Bocinas para Auto</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+    </section>
+
+    <!--**********OFERTAS Y PROMOS************ -->
+    <h3 class="h3_cat">Ofertas y promos</h3>
+    <section id="categorias" class="d-flex ">
+
+      <div class="card m-2 ">
+        <img src="img/categorias/cat1.jpg" class="card-img-top" alt="Bocinas Para Carro">
+        <div class="card-body">
+          <h5 class="card-title">Bocinas para Auto</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2 ">
+        <img src="img/categorias/cat2.jpg" class="card-img-top" alt="Minicomponentes para casa">
+        <div class="card-body">
+          <h5 class="card-title">Mincomponentes para casa</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="img/categorias/cat3.jpg" class="card-img-top" alt="Baffles activos y pasivos">
+        <div class="card-body">
+          <h5 class="card-title">Baffles activos y pasivos</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="img/categorias/cat4.webp" class="card-img-top" alt="Bocinas Para Carro">
+        <div class="card-body">
+          <h5 class="card-title">Bocinas para Auto</h5>
+          <a href="#" class="btn btn-primary">Ver catálago</a>
+        </div>
+      </div>
+    </section>
+    <!-- ***************** PRODUCTOS ESTRELLA*********************-->
+    <h3 class="h3_cat">Productos destacados</h3>
+    <section class="categorias d-flex flex-wrap">
+      <div class="starProd">
+        <div class="imgFrame me-2">
+          <div id="imgSP1" class="imgStarProd"></div>
+        </div>
+        <div class="prodDetails row">
+          <h3>Minicomponente Sony</h3>
+          <p>Precio: $000.00 </p>
+          <button class="btn btn-success">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="starProd">
+        <div class="imgFrame me-2">
+          <div id="imgSP2" class="imgStarProd"></div>
+        </div>
+        <div class="prodDetails row ">
+          <h3>Bocina JBL PartyBox</h3>
+          <p>Precio: $000.00 </p>
+          <button class="btn btn-success">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="starProd">
+        <div class="imgFrame me-2">
+          <div id="imgSP3" class="imgStarProd"></div>
+        </div>
+        <div class="prodDetails row">
+          <h3>Minicomponente LG</h3>
+          <p>Precio: $000.00 </p>
+          <button class="btn btn-success">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="starProd">
+        <div class="imgFrame me-2">
+          <div id="imgSP4" class="imgStarProd"></div>
+        </div>
+        <div class="prodDetails row">
+          <h3>Bocinas LOGITECH</h3>
+          <p>Precio: $000.00 </p>
+          <button class="btn btn-success">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="starProd">
+        <div class="imgFrame me-2">
+          <div id="imgSP5" class="imgStarProd"></div>
+        </div>
+        <div class="prodDetails row">
+          <h3>Bocina BOSE</h3>
+          <p>Precio: $000.00 </p>
+          <button class="btn btn-success">Comprar ahora</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small> &copy; 2023 <b>Mis Bocinas</b> --Todos los derechos reservados</small>
+
+
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</html>
